@@ -1,0 +1,23 @@
+.hello {
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+    background-color: #97aa96;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.text {
+    font-family: Charter;
+    font-size: 40px;
+    line-height: 1.2;
+    max-width: 550px;
+    margin: 0px auto;
+    font-weight: 500;
+}
+
+.link {
+    color: #4c5a4b;
+
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+}

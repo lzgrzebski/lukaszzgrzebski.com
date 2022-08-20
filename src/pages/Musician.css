@@ -1,0 +1,33 @@
+body {
+    place-items: baseline !important;
+    width: 100%;
+}
+
+video {
+    width: 100vw;
+    max-height: 800px;
+    display: block;
+    object-fit: cover;
+}
+
+/* font-size: 25px;
+backdrop-filter: blur(20px);
+display: inline-block;
+border-radius: 100px;
+padding: 20px;
+margin-top: 42px;
+position: relative;
+top: 39px;
+color: white;
+font-weight: 700;
+    background: rgba(255,255,255,0.05);
+    mix-blend-mode: difference;*/
+
+/*
+active
+mix-blend-mode: difference;
+    border: 3px solid;
+
+*/
+
+/*#969daa*/
