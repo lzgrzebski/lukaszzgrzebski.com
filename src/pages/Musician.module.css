@@ -8,12 +8,12 @@
 
 .menu {
     position: fixed;
-    top: 10px;
+    top: 8px;
     left: 0;
     right: 0;
-    mix-blend-mode: difference;
+    height: 55px;
     backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.05);
+    background: rgb(0 0 0 / 3%);
     z-index: 1;
 
     border-radius: 20px;
@@ -25,6 +25,7 @@
 }
 
 .button {
+    position: fixed;
     text-align: center;
 
     margin-left: 5px;
@@ -42,42 +43,62 @@
 
 .button:hover {
     background: rgba(255, 255, 255, 0.2);
-    border-color: #fff;
 }
 
 .button1 {
-    right: 480px;
+    left: 10px;
+
+    top: 8px;
 }
 
 .button2 {
-    right: 250px;
+    left: 110px;
+    top: 8px;
 }
 
 .button3 {
-    right: 20px;
+    left: 235px;
+    top: 8px;
 }
 
 .button.active {
-    border-color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.blend {
+    mix-blend-mode: difference;
 }
 
 @media (min-width: 1024px) {
+    .filter {
+        backdrop-filter: blur(20px);
+        background: rgb(0 0 0 / 3%);
+    }
     .menu {
-        position: unset;
-        mix-blend-mode: unset;
-        backdrop-filter: unset;
-        background: transparent;
+        display: none;
     }
     .button {
-        position: fixed;
         top: 20px;
 
-        width: 170px;
-        backdrop-filter: blur(20px);
-        background: rgba(255, 255, 255, 0.05);
-        mix-blend-mode: difference;
-        border: 3px solid transparent;
+        width: 210px;
+        height: 68.75px;
+        box-sizing: border-box;
         font-size: 25px;
+    }
+
+    .button1 {
+        right: 480px;
+        left: unset;
+    }
+
+    .button2 {
+        right: 250px;
+        left: unset;
+    }
+
+    .button3 {
+        right: 20px;
+        left: unset;
     }
 }
 

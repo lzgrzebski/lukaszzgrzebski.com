@@ -6,18 +6,31 @@ import styles from './Musician.module.css';
 export const Musician: React.FC = () => {
     return (
         <div className={styles.musician}>
-            <div className={styles.menu}>
-                <div className={cx(styles.button, styles.button1)}>
-                    Developer
-                </div>
-                <div className={cx(styles.button, styles.button2)}>
-                    Photographer
-                </div>
-                <div
-                    className={cx(styles.button, styles.button3, styles.active)}
-                >
-                    Musician
-                </div>
+            <div className={styles.menu}></div>
+            <div
+                className={cx(styles.button, styles.button1, styles.filter)}
+            ></div>
+            <div className={cx(styles.button, styles.button1, styles.blend)}>
+                Developer
+            </div>
+            <div
+                className={cx(styles.button, styles.button2, styles.filter)}
+            ></div>
+            <div className={cx(styles.button, styles.button2, styles.blend)}>
+                Photographer
+            </div>
+            <div
+                className={cx(styles.button, styles.button3, styles.filter)}
+            ></div>
+            <div
+                className={cx(
+                    styles.button,
+                    styles.button3,
+                    styles.blend,
+                    styles.active
+                )}
+            >
+                Musician
             </div>
             <div className={styles.jumbotron}>
                 <video
