@@ -6,118 +6,13 @@
     color: rgb(40 44 53);
 }
 
-.menu {
-    position: fixed;
-    top: 8px;
-    left: 0;
-    right: 0;
-    height: 55px;
-    backdrop-filter: blur(20px);
-    background: rgb(0 0 0 / 3%);
-    z-index: 1;
-
-    border-radius: 20px;
-
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-    display: flex;
-}
-
-.button {
-    position: fixed;
-    text-align: center;
-
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 0.8rem;
-
-    display: inline-block;
-    border-radius: 100px;
-    padding: 20px;
-    color: #fff;
-    font-weight: 700;
-
-    z-index: 1;
-}
-
-.button:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.button1 {
-    left: 10px;
-
-    top: 8px;
-}
-
-.button2 {
-    left: 110px;
-    top: 8px;
-}
-
-.button3 {
-    left: 235px;
-    top: 8px;
-}
-
-.button.active {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-.blend {
-    mix-blend-mode: difference;
-}
-
-@media (min-width: 1024px) {
-    .filter {
-        backdrop-filter: blur(20px);
-        background: rgb(0 0 0 / 3%);
-    }
-    .menu {
-        display: none;
-    }
-    .button {
-        top: 20px;
-
-        width: 210px;
-        height: 68.75px;
-        box-sizing: border-box;
-        font-size: 25px;
-    }
-
-    .button1 {
-        right: 480px;
-        left: unset;
-    }
-
-    .button2 {
-        right: 250px;
-        left: unset;
-    }
-
-    .button3 {
-        right: 20px;
-        left: unset;
-    }
-}
-
 .jumbotron {
     width: 100%;
     height: 100%;
     height: calc(100vh - 11rem);
     overflow: hidden;
     position: relative;
-}
-
-.header {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-
-    color: rgba(255, 255, 255, 1);
-    font-size: 20px;
-    font-weight: 700;
+    background-color: #969daa;
 }
 
 .video {
@@ -135,7 +30,13 @@
     grid-row-gap: 20px;
 
     max-width: 1700px;
-    margin: 5vh auto 0;
+    margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        margin-top: 5vh;
+    }
 }
 
 .row1 {
@@ -188,20 +89,6 @@
     width: 100%;
 
     vertical-align: bottom;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 20px;
-
-    color: rgb(68 74 87);
-    font-weight: 700;
-}
-
-.links a {
-    margin: left 10px;
-    margin-right: 10px;
 }
 
 /* font-size: 25px;

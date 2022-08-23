@@ -2,36 +2,16 @@ import React from 'react';
 import cx from 'classnames';
 import splash from '../assets/videos/musician.mp4';
 import styles from './Musician.module.css';
+import { Menu } from '../views/Menu.view';
+import { Footer } from '../views/Footer.view';
+import { Page } from '../constants';
 
-export const Musician: React.FC = () => {
+export const Musician: React.FC<{ setPage: (page: Page) => void }> = ({
+    setPage,
+}) => {
     return (
         <div className={styles.musician}>
-            <div className={styles.menu}></div>
-            <div
-                className={cx(styles.button, styles.button1, styles.filter)}
-            ></div>
-            <div className={cx(styles.button, styles.button1, styles.blend)}>
-                Developer
-            </div>
-            <div
-                className={cx(styles.button, styles.button2, styles.filter)}
-            ></div>
-            <div className={cx(styles.button, styles.button2, styles.blend)}>
-                Photographer
-            </div>
-            <div
-                className={cx(styles.button, styles.button3, styles.filter)}
-            ></div>
-            <div
-                className={cx(
-                    styles.button,
-                    styles.button3,
-                    styles.blend,
-                    styles.active
-                )}
-            >
-                Musician
-            </div>
+            <Menu setPage={setPage} />
             <div className={styles.jumbotron}>
                 <video
                     src={splash}
@@ -39,6 +19,7 @@ export const Musician: React.FC = () => {
                     loop
                     muted
                     className={styles.video}
+                    preload="auto"
                 />
             </div>
             <div className={cx(styles.grid, styles.text)}>
@@ -87,14 +68,7 @@ export const Musician: React.FC = () => {
                     ></iframe>
                 </div>
             </div>
-            <div className={styles.footer}>
-                <div>&copy; łukasz</div>
-                <div className={styles.links}>
-                    <a>linkedin</a>
-                    <a>instagram</a>
-                    <a>github</a>
-                </div>
-            </div>
+            <Footer />
         </div>
     );
 };

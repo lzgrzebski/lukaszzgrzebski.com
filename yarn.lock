@@ -486,10 +486,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/dom-webcodecs@npm:^0.1.4":
+  version: 0.1.4
+  resolution: "@types/dom-webcodecs@npm:0.1.4"
+  checksum: 150813bbee4315620282ef849d0e61c7a5e6ba7d9475307d06effaa900baa124cd6d922e5de498f80f31beb5dc23daa1750f71babcf5cf1159df05ee0d224751
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.9":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
   checksum: 527bddfe62db9012fccd7627794bd4c71beb77601861055d87e3ee464f2217c85fca7a4b56ae677478367bbd248dbde13553312b7d4dbc702a2f2bbf60c4018d
+  languageName: node
+  linkType: hard
+
+"@types/offscreencanvas@npm:^2019.7.0":
+  version: 2019.7.0
+  resolution: "@types/offscreencanvas@npm:2019.7.0"
+  checksum: 018cfcd19e0c59c44d14ba61caaca7246f77fbb512839c7881654b7f2b6591dbdd5857362eccbf49f29cdc93724e71a4b37c8b6cf203388f9c04e913a53ea390
   languageName: node
   linkType: hard
 
@@ -2363,6 +2377,8 @@ __metadata:
   resolution: "lukaszzgrzebski.com@workspace:."
   dependencies:
     "@types/classnames": ^2.3.1
+    "@types/dom-webcodecs": ^0.1.4
+    "@types/offscreencanvas": ^2019.7.0
     "@types/react": ^18.0.17
     "@types/react-dom": ^18.0.6
     "@typescript-eslint/eslint-plugin": latest

@@ -1,0 +1,95 @@
+.menu {
+    position: fixed;
+    top: 8px;
+    left: 0;
+    right: 0;
+    height: 55px;
+    backdrop-filter: blur(20px);
+    background: rgb(0 0 0 / 3%);
+    z-index: 1;
+
+    border-radius: 20px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    display: flex;
+}
+
+.button {
+    position: fixed;
+    text-align: center;
+
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 0.8rem;
+
+    display: inline-block;
+    border-radius: 100px;
+    padding: 20px;
+    color: #fff;
+    font-weight: 700;
+
+    z-index: 1;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.button1 {
+    left: 10px;
+
+    top: 8px;
+}
+
+.button2 {
+    left: 110px;
+    top: 8px;
+}
+
+.button3 {
+    left: 235px;
+    top: 8px;
+}
+
+.button.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.blend {
+    mix-blend-mode: difference;
+}
+
+@media (min-width: 1024px) {
+    .filter {
+        backdrop-filter: blur(20px);
+        background: rgb(0 0 0 / 3%);
+    }
+    .menu {
+        display: none;
+    }
+    .button {
+        top: 20px;
+
+        width: 210px;
+        height: 68.75px;
+        box-sizing: border-box;
+        font-size: 25px;
+    }
+
+    .button1 {
+        right: 480px;
+        left: unset;
+    }
+
+    .button2 {
+        right: 250px;
+        left: unset;
+    }
+
+    .button3 {
+        right: 20px;
+        left: unset;
+    }
+}
