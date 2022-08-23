@@ -9,6 +9,8 @@ import { Jumbotron } from '../views/Jumbotron.view';
 import { Video } from '../views/Video.view';
 import { Text } from '../views/Text.view';
 import { Layout } from '../views/Layout.view';
+import { Grid } from '../views/Grid.page';
+import { Paragraph } from '../views/Paragraph.view';
 
 export const Developer: React.FC<{ setPage: (page: Page) => void }> = ({
     setPage,
@@ -18,29 +20,25 @@ export const Developer: React.FC<{ setPage: (page: Page) => void }> = ({
         <Jumbotron>
             <Video src={splash} />
         </Jumbotron>
-        <Text className={styles.grid}>
-            <div className={styles.row1}>
-                <div className={styles.paragraph}>
+        <Grid>
+            <Text>
+                <Paragraph>
                     As a developer I love to experiment, mess with media APIs in
                     the browser, and create clean UIs.
-                </div>
-                <div className={styles.paragraph}>
+                </Paragraph>
+                <Paragraph>
                     Have masters in computer science. And multiple years of
                     experience working in Poland and Norway.
-                </div>
-                <div>
+                </Paragraph>
+                <Paragraph>
                     Currently I&apos;m working at Pexip where I make video
                     collaboration tools.
-                </div>
-
-                <div
-                    className={styles.paragraph}
-                    onClick={() => setPage(Page.Pixlzr)}
-                >
-                    <a>Pixlzr</a>
-                </div>
-            </div>
-        </Text>
+                </Paragraph>
+                <Paragraph>
+                    <a onClick={() => setPage(Page.Pixlzr)}>Pixlzr</a>
+                </Paragraph>
+            </Text>
+        </Grid>
         <Footer />
     </Layout>
 );

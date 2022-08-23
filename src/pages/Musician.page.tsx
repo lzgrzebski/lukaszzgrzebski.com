@@ -1,7 +1,6 @@
 import React from 'react';
-import cx from 'classnames';
+
 import splash from '../assets/videos/musician.mp4';
-import styles from './Musician.module.css';
 import { Menu } from '../views/Menu.view';
 import { Footer } from '../views/Footer.view';
 import { Page } from '../constants';
@@ -10,6 +9,8 @@ import { Video } from '../views/Video.view';
 import { Iframe } from '../views/Iframe.view';
 import { Text } from '../views/Text.view';
 import { Layout } from '../views/Layout.view';
+import { Grid } from '../views/Grid.page';
+import { Paragraph } from '../views/Paragraph.view';
 
 export const Musician: React.FC<{ setPage: (page: Page) => void }> = ({
     setPage,
@@ -19,30 +20,31 @@ export const Musician: React.FC<{ setPage: (page: Page) => void }> = ({
         <Jumbotron>
             <Video src={splash} />
         </Jumbotron>
-        <Text className={styles.grid}>
-            <div className={styles.row1}>
-                <div className={styles.paragraph}>
-                    As a musician, an amatour one I explore ambient soudscapes
-                    and generative music.
-                </div>
-
-                <div className={styles.paragraph}>
-                    Besides my solo explorations I play in screamo band called
-                    Nukk. And I was a member of DERME, a group of audiovisual
-                    artists combining ambient and noise music with experimental
-                    cinema.
-                </div>
-            </div>
-            <div className={styles.row2}>
+        <Grid
+            row1={
+                <Text>
+                    <Paragraph>
+                        As a musician, an amatour one I explore ambient
+                        soudscapes and generative music.
+                    </Paragraph>
+                    <Paragraph>
+                        Besides my solo explorations I play in screamo band
+                        called Nukk. And I was a member of DERME, a group of
+                        audiovisual artists combining ambient and noise music
+                        with experimental cinema.
+                    </Paragraph>
+                </Text>
+            }
+            row2={
                 <Iframe src="https://www.youtube.com/embed/FaVxCsob25U?controls=0" />
-            </div>
-            <div className={styles.row3}>
+            }
+            row3={
                 <Iframe src="https://www.youtube.com/embed/2o8Cukf4orU?controls=0" />
-            </div>
-            <div className={styles.row4}>
+            }
+            row4={
                 <Iframe src="https://www.youtube.com/embed/wlO935TyVyw?controls=0" />
-            </div>
-        </Text>
+            }
+        />
         <Footer />
     </Layout>
 );

@@ -9,6 +9,8 @@ import { Jumbotron } from '../views/Jumbotron.view';
 import { Video } from '../views/Video.view';
 import { Text } from '../views/Text.view';
 import { Layout } from '../views/Layout.view';
+import { Grid } from '../views/Grid.page';
+import { Paragraph } from '../views/Paragraph.view';
 
 export const Photographer: React.FC<{ setPage: (page: Page) => void }> = ({
     setPage,
@@ -18,28 +20,28 @@ export const Photographer: React.FC<{ setPage: (page: Page) => void }> = ({
         <Jumbotron>
             <Video src={splash} />
         </Jumbotron>
-        <Text className={styles.grid}>
-            <div className={styles.row1}>
-                <div className={styles.paragraph}>
+        <Grid>
+            <Text>
+                <Paragraph>
                     As a photographer, I like exploring spaces, especially where
                     nature meets human activity in the symbiosis.
-                </div>
-                <div className={styles.paragraph}>
+                </Paragraph>
+                <Paragraph>
                     I am a graduate from AFA School of Photography and my latest
                     exbition &quot;That day everyone left&quot; took place in
                     Contemporary Museum in Wrocław.
-                </div>
-                <div className={styles.paragraph}>
+                </Paragraph>
+                <Paragraph>
                     <a>By the river (2021-)</a>
-                </div>
-                <div className={styles.paragraph}>
+                </Paragraph>
+                <Paragraph>
                     <a>Stay at home zine (2020)</a>
-                </div>
-                <div className={styles.paragraph}>
+                </Paragraph>
+                <Paragraph>
                     <a>That day everyone left (2019)</a>
-                </div>
-            </div>
-        </Text>
+                </Paragraph>
+            </Text>
+        </Grid>
         <Footer />
     </Layout>
 );
