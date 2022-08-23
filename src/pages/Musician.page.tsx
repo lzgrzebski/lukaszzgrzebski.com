@@ -14,12 +14,12 @@ export const Musician: React.FC<{ setPage: (page: Page) => void }> = ({
             <Menu setPage={setPage} />
             <div className={styles.jumbotron}>
                 <video
-                    src={splash}
                     autoPlay
+                    className={styles.video}
                     loop
                     muted
-                    className={styles.video}
                     preload="auto"
+                    src={splash}
                 />
             </div>
             <div className={cx(styles.grid, styles.text)}>
@@ -39,32 +39,32 @@ export const Musician: React.FC<{ setPage: (page: Page) => void }> = ({
 
                 <div className={styles.row2}>
                     <iframe
-                        src="https://www.youtube.com/embed/FaVxCsob25U?controls=0"
-                        title="YouTube video player"
-                        frameBorder={0}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         className={styles.iframe}
+                        frameBorder={0}
+                        src="https://www.youtube.com/embed/FaVxCsob25U?controls=0"
+                        title="YouTube video player"
                     ></iframe>
                 </div>
                 <div className={styles.row3}>
                     <iframe
-                        src="https://www.youtube.com/embed/2o8Cukf4orU?controls=0"
-                        title="YouTube video player"
-                        frameBorder={0}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         className={styles.iframe}
+                        frameBorder={0}
+                        src="https://www.youtube.com/embed/2o8Cukf4orU?controls=0"
+                        title="YouTube video player"
                     ></iframe>
                 </div>
                 <div className={styles.row4}>
                     <iframe
-                        src="https://www.youtube.com/embed/wlO935TyVyw?controls=0"
-                        title="YouTube video player"
-                        frameBorder={0}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         className={styles.iframe}
+                        frameBorder={0}
+                        src="https://www.youtube.com/embed/wlO935TyVyw?controls=0"
+                        title="YouTube video player"
                     ></iframe>
                 </div>
             </div>

@@ -15,12 +15,12 @@ export const Developer: React.FC<{ setPage: (page: Page) => void }> = ({
             <Menu setPage={setPage} />
             <div className={styles.jumbotron}>
                 <video
-                    src={splash}
                     autoPlay
+                    className={styles.video}
                     loop
                     muted
-                    className={styles.video}
                     preload="auto"
+                    src={splash}
                 />
             </div>
             <div className={cx(styles.grid, styles.text)}>

@@ -161,7 +161,7 @@ export const Pixlzr = () => {
 
         navigator.mediaDevices
             .getUserMedia({
-                video: { width, height },
+                video: { height, width },
             })
             .then((stream) => {
                 const signal = abortController.signal;
@@ -387,14 +387,14 @@ export const Pixlzr = () => {
 
     return (
         <video
-            ref={videoRef}
             autoPlay
             muted
+            ref={videoRef}
             style={{
+                display: 'block',
+                height: '100vh',
                 objectFit: 'cover',
                 width: '100vw',
-                height: '100vh',
-                display: 'block',
             }}
         />
     );
