@@ -1,0 +1,12 @@
+.iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+
+    vertical-align: bottom;
+}
+
+@media (min-width: 1024px) {
+    .iframe {
+        border-radius: 8px;
+    }
+}

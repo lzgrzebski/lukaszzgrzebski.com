@@ -6,6 +6,9 @@ import styles from './Photographer.module.css';
 import { Page } from '../constants';
 import { Menu } from '../views/Menu.view';
 import { Footer } from '../views/Footer.view';
+import { Jumbotron } from '../views/Jumbotron.view';
+import { Video } from '../views/Video.view';
+import { Text } from '../views/Text.view';
 
 export const Photographer: React.FC<{ setPage: (page: Page) => void }> = ({
     setPage,
@@ -13,17 +16,10 @@ export const Photographer: React.FC<{ setPage: (page: Page) => void }> = ({
     return (
         <div className={styles.photographer}>
             <Menu setPage={setPage} />
-            <div className={styles.jumbotron}>
-                <video
-                    autoPlay
-                    className={styles.video}
-                    loop
-                    muted
-                    preload="auto"
-                    src={splash}
-                />
-            </div>
-            <div className={cx(styles.grid, styles.text)}>
+            <Jumbotron>
+                <Video src={splash} />
+            </Jumbotron>
+            <Text className={styles.grid}>
                 <div className={styles.row1}>
                     <div className={styles.paragraph}>
                         As a photographer, I like exploring spaces, especially
@@ -44,7 +40,7 @@ export const Photographer: React.FC<{ setPage: (page: Page) => void }> = ({
                         <a>That day everyone left (2019)</a>
                     </div>
                 </div>
-            </div>
+            </Text>
             <Footer />
         </div>
     );

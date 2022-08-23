@@ -1,5 +1,6 @@
 import React from 'react';
 import { Page } from '../constants';
+import { Text } from '../views/Text.view';
 
 import styles from './Hello.module.css';
 
@@ -8,7 +9,7 @@ export const Hello: React.FC<{ setPage: (page: Page) => void }> = ({
 }) => {
     return (
         <div className={styles.hello}>
-            <div className={styles.text}>
+            <Text className={styles.wrapper}>
                 Hello, <br />
                 my name is Łukasz, I am a<br />
                 <a
@@ -34,7 +35,7 @@ export const Hello: React.FC<{ setPage: (page: Page) => void }> = ({
                     musician
                 </a>{' '}
                 too :).
-            </div>
+            </Text>
         </div>
     );
 };
