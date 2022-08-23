@@ -1,11 +1,3 @@
-.musician {
-    min-height: 100vh;
-    /* background-color: #969daa; */
-    /* color: rgb(68 74 87); */
-    background: #fff;
-    color: rgb(40 44 53);
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -15,12 +7,6 @@
 
     max-width: 1700px;
     margin: 0 auto;
-}
-
-@media (min-width: 1024px) {
-    .grid {
-        margin-top: 5vh;
-    }
 }
 
 .row1 {
@@ -39,10 +25,12 @@
 }
 
 @media (min-width: 1024px) {
+    .grid {
+        margin-top: 5vh;
+    }
     .row1 {
         grid-area: 1 / 1 / 2 / 8;
     }
-
     .row3 {
         grid-area: 3 / 1 / 3 / 6;
     }
@@ -55,25 +43,3 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
-/* font-size: 25px;
-backdrop-filter: blur(20px);
-display: inline-block;
-border-radius: 100px;
-padding: 20px;
-margin-top: 42px;
-position: relative;
-top: 39px;
-color: white;
-font-weight: 700;
-    background: rgba(255,255,255,0.05);
-    mix-blend-mode: difference;*/
-
-/*
-active
-mix-blend-mode: difference;
-    border: 3px solid;
-
-*/
-
-/*#969daa*/

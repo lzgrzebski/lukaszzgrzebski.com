@@ -1,15 +1,3 @@
-.photographer {
-    min-height: 100vh;
-    background: #fff;
-    color: rgb(40 44 53);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    --jumbotron-background: #111111;
-}
-
 .grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -23,18 +11,15 @@
     padding-top: 8vh;
 }
 
-@media (min-width: 1024px) {
-    .grid {
-        padding-top: 5vh;
-    }
-}
-
 .row1 {
     grid-area: 1 / 1 / 2 / 11;
     padding: 0 20px;
 }
 
 @media (min-width: 1024px) {
+    .grid {
+        padding-top: 5vh;
+    }
     .row1 {
         grid-area: 1 / 1 / 2 / 8;
     }

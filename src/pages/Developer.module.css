@@ -1,11 +1,6 @@
 .developer {
-    min-height: 100vh;
-    background: #151515;
-    color: rgba(255, 255, 255, 0.9);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    --layout-background: #151515;
+    --layout-color: rgba(255, 255, 255, 0.9);
 
     --jumbotron-background: #111111;
 }
@@ -23,18 +18,16 @@
     padding-top: 8vh;
 }
 
-@media (min-width: 1024px) {
-    .grid {
-        padding-top: 5vh;
-    }
-}
-
 .row1 {
     grid-area: 1 / 1 / 2 / 11;
     padding: 0 20px;
 }
 
 @media (min-width: 1024px) {
+    .grid {
+        padding-top: 5vh;
+    }
+
     .row1 {
         grid-area: 1 / 1 / 2 / 8;
     }
