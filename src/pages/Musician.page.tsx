@@ -3,7 +3,6 @@ import React from 'react';
 import splash from '../assets/videos/musician.mp4';
 import { Menu } from '../views/Menu.view';
 import { Footer } from '../views/Footer.view';
-import { Page } from '../constants';
 import { Jumbotron } from '../views/Jumbotron.view';
 import { Video } from '../views/Video.view';
 import { Iframe } from '../views/Iframe.view';
@@ -12,11 +11,9 @@ import { Layout } from '../views/Layout.view';
 import { Grid } from '../views/Grid.page';
 import { Paragraph } from '../views/Paragraph.view';
 
-export const Musician: React.FC<{ setPage: (page: Page) => void }> = ({
-    setPage,
-}) => (
+const Musician: React.FC = () => (
     <Layout>
-        <Menu setPage={setPage} />
+        <Menu />
         <Jumbotron>
             <Video src={splash} />
         </Jumbotron>
@@ -48,3 +45,5 @@ export const Musician: React.FC<{ setPage: (page: Page) => void }> = ({
         <Footer />
     </Layout>
 );
+
+export default { Page: Musician };

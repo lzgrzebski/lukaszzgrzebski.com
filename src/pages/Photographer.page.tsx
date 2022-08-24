@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Page } from '../constants';
 import { Menu } from '../views/Menu.view';
 import { Footer } from '../views/Footer.view';
 import { Jumbotron } from '../views/Jumbotron.view';
@@ -12,11 +11,9 @@ import { Paragraph } from '../views/Paragraph.view';
 
 import splash from '../assets/videos/photographer.mp4';
 
-export const Photographer: React.FC<{ setPage: (page: Page) => void }> = ({
-    setPage,
-}) => (
+const Photographer: React.FC = () => (
     <Layout>
-        <Menu setPage={setPage} />
+        <Menu />
         <Jumbotron>
             <Video src={splash} />
         </Jumbotron>
@@ -32,18 +29,22 @@ export const Photographer: React.FC<{ setPage: (page: Page) => void }> = ({
                     Contemporary Museum in Wrocław.
                 </Paragraph>
                 <Paragraph>
-                    <a>By the river (2021-)</a>
+                    <a href="/river">By the river (2021-)</a>
                 </Paragraph>
                 <Paragraph>
-                    <a>Stay at home zine (2020)</a>
+                    <a href="/stay-at-home">Stay at home zine (2020)</a>
                 </Paragraph>
                 <Paragraph>
-                    <a>That day everyone left (2019)</a>
+                    <a href="/that-day-everyone-left">
+                        That day everyone left (2019)
+                    </a>
                 </Paragraph>
             </Text>
         </Grid>
         <Footer />
     </Layout>
 );
+
+export default { Page: Photographer };
 
 // https://muzeumwspolczesne.pl/mww/wystawy/tamtego-dnia-wszyscy-wyjechali-lukasz-zgrzebski/?lang=en

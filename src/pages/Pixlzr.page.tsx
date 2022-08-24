@@ -149,7 +149,7 @@ const isVideoTrack = (
     track: MediaStreamTrack
 ): track is MediaStreamVideoTrack => track && track.kind === 'video';
 
-export const Pixlzr = () => {
+const Pixlzr = () => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
 
     useEffect(() => {
@@ -351,9 +351,12 @@ export const Pixlzr = () => {
                                     videoFrame.close();
                                     const timestamp = videoFrame.timestamp ?? 0;
                                     controller.enqueue(
-                                        new VideoFrame(offscreenCanvas, {
-                                            timestamp,
-                                        })
+                                        new VideoFrame(
+                                            offscreenCanvas as unknown as CanvasImageSource,
+                                            {
+                                                timestamp,
+                                            }
+                                        )
                                     );
                                     return;
                                 },
@@ -399,3 +402,5 @@ export const Pixlzr = () => {
         />
     );
 };
+
+export default { Page: Pixlzr };
