@@ -51,7 +51,5 @@
 
 a {
     cursor: pointer;
-
-    text-decoration: underline;
-    text-decoration-thickness: from-font;
+    text-decoration: none;
 }

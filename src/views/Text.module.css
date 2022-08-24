@@ -5,3 +5,9 @@
     line-height: 1.2;
     font-weight: 500;
 }
+
+.text a {
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    color: var(--layout-color, rgb(40 44 53));
+}
