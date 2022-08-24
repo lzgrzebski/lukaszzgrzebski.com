@@ -4,4 +4,7 @@ export enum Page {
     Photographer,
     Musician,
     Pixlzr,
+    ThatDayEveryoneLeft,
+    River,
+    StayAtHome,
 }

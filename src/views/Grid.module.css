@@ -5,6 +5,7 @@
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 
+    width: 100%;
     max-width: 1700px;
     margin: 0 auto;
 }

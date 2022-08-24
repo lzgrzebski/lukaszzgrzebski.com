@@ -1,7 +1,5 @@
 import React from 'react';
 
-import splash from '../assets/videos/photographer.mp4';
-import styles from './Photographer.module.css';
 import { Page } from '../constants';
 import { Menu } from '../views/Menu.view';
 import { Footer } from '../views/Footer.view';
@@ -11,6 +9,8 @@ import { Text } from '../views/Text.view';
 import { Layout } from '../views/Layout.view';
 import { Grid } from '../views/Grid.page';
 import { Paragraph } from '../views/Paragraph.view';
+
+import splash from '../assets/videos/photographer.mp4';
 
 export const Photographer: React.FC<{ setPage: (page: Page) => void }> = ({
     setPage,
