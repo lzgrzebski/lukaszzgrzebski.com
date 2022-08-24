@@ -1,17 +1,13 @@
-export { render };
-export { passToClient };
-
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { escapeInject, dangerouslySkipEscape } from 'vite-plugin-ssr';
+
 import { PageContext } from './types';
+
 import 'normalize.css';
 import '../index.css';
 
-// See https://vite-plugin-ssr.com/data-fetching
-const passToClient = ['pageProps'];
-
-function render(pageContext: PageContext) {
+export const render = (pageContext: PageContext) => {
     let pageHtml;
     if (!pageContext.Page) {
         // SPA
@@ -30,7 +26,10 @@ function render(pageContext: PageContext) {
     <html>
     <head> <meta charset="UTF-8" /></head> 
       <body>
-        <div id="react-container">${dangerouslySkipEscape(pageHtml)}</div>
+        <div id="root">${dangerouslySkipEscape(pageHtml)}</div>
       </body>
     </html>`;
-}
+};
+
+// See https://vite-plugin-ssr.com/data-fetching
+export const passToClient = ['pageProps'];
