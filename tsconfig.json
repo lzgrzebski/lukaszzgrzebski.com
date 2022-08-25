@@ -15,12 +15,7 @@
         "isolatedModules": true,
         "noEmit": true,
         "jsx": "react-jsx",
-        "types": [
-            "vite/client",
-            "dom-webcodecs",
-            "offscreencanvas",
-            "client.d.ts"
-        ]
+        "types": ["vite/client", "dom-webcodecs", "offscreencanvas"]
     },
     "include": ["src"],
     "references": [{ "path": "./tsconfig.node.json" }]
