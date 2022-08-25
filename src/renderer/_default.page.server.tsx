@@ -29,7 +29,7 @@ export const render = (pageContext: PageContext) => {
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:image" content="https://lukaszzgrzebski.com/og.svg"/>
+        <meta property="og:image" content="https://lukaszzgrzebski.com/og.png"/>
         <title>Hello, I'm Łukasz. Software developer, photographer and musician from Poland :)</title>
     </head> 
       <body>
