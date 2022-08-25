@@ -1,6 +1,5 @@
 import React from 'react';
 
-import splash from '../assets/videos/musician.mp4';
 import { Menu } from '../views/Menu.view';
 import { Footer } from '../views/Footer.view';
 import { Jumbotron } from '../views/Jumbotron.view';
@@ -10,6 +9,8 @@ import { Text } from '../views/Text.view';
 import { Layout } from '../views/Layout.view';
 import { Grid } from '../views/Grid.page';
 import { Paragraph } from '../views/Paragraph.view';
+
+import splash from '../assets/videos/musician.mp4';
 
 const Musician: React.FC = () => (
     <Layout>
