@@ -3,6 +3,10 @@
     "file": "assets/3.9008d2d7.jpg",
     "src": "src/assets/photos/river/3.jpg"
   },
+  "src/assets/photos/river/2.jpg": {
+    "file": "assets/2.1e21b2d0.jpg",
+    "src": "src/assets/photos/river/2.jpg"
+  },
   "src/assets/photos/river/4.jpg": {
     "file": "assets/4.70459528.jpg",
     "src": "src/assets/photos/river/4.jpg"
@@ -15,17 +19,21 @@
     "file": "assets/1.44429bdb.jpg",
     "src": "src/assets/photos/stay-at-home/1.jpg"
   },
+  "src/assets/photos/that-day-everyone-left/6.jpg": {
+    "file": "assets/6.bb469d22.jpg",
+    "src": "src/assets/photos/that-day-everyone-left/6.jpg"
+  },
   "src/assets/photos/that-day-everyone-left/1.jpg": {
     "file": "assets/1.26dab4b5.jpg",
     "src": "src/assets/photos/that-day-everyone-left/1.jpg"
   },
-  "src/assets/photos/river/2.jpg": {
-    "file": "assets/2.1e21b2d0.jpg",
-    "src": "src/assets/photos/river/2.jpg"
+  "src/assets/photos/that-day-everyone-left/8.jpg": {
+    "file": "assets/8.3a0cd36e.jpg",
+    "src": "src/assets/photos/that-day-everyone-left/8.jpg"
   },
-  "src/assets/photos/that-day-everyone-left/2.jpg": {
-    "file": "assets/2.225ea53a.jpg",
-    "src": "src/assets/photos/that-day-everyone-left/2.jpg"
+  "src/assets/photos/that-day-everyone-left/4.jpg": {
+    "file": "assets/4.bac09810.jpg",
+    "src": "src/assets/photos/that-day-everyone-left/4.jpg"
   },
   "src/assets/photos/that-day-everyone-left/3.jpg": {
     "file": "assets/3.6f2654c7.jpg",
@@ -34,6 +42,18 @@
   "src/assets/photos/river/7.jpg": {
     "file": "assets/7.ad2ff870.jpg",
     "src": "src/assets/photos/river/7.jpg"
+  },
+  "src/assets/photos/that-day-everyone-left/5.jpg": {
+    "file": "assets/5.73f5d09d.jpg",
+    "src": "src/assets/photos/that-day-everyone-left/5.jpg"
+  },
+  "src/assets/photos/that-day-everyone-left/7.jpg": {
+    "file": "assets/7.94c6091f.jpg",
+    "src": "src/assets/photos/that-day-everyone-left/7.jpg"
+  },
+  "src/assets/photos/that-day-everyone-left/2.jpg": {
+    "file": "assets/2.225ea53a.jpg",
+    "src": "src/assets/photos/that-day-everyone-left/2.jpg"
   },
   "src/assets/photos/river/8.jpg": {
     "file": "assets/8.3e483980.jpg",
@@ -47,14 +67,6 @@
     "file": "assets/11.b384c92b.jpg",
     "src": "src/assets/photos/river/11.jpg"
   },
-  "src/assets/photos/that-day-everyone-left/6.jpg": {
-    "file": "assets/6.bb469d22.jpg",
-    "src": "src/assets/photos/that-day-everyone-left/6.jpg"
-  },
-  "src/assets/photos/that-day-everyone-left/8.jpg": {
-    "file": "assets/8.3a0cd36e.jpg",
-    "src": "src/assets/photos/that-day-everyone-left/8.jpg"
-  },
   "src/assets/photos/that-day-everyone-left/9.jpg": {
     "file": "assets/9.f1e5919a.jpg",
     "src": "src/assets/photos/that-day-everyone-left/9.jpg"
@@ -67,21 +79,9 @@
     "file": "assets/11.e30ee598.jpg",
     "src": "src/assets/photos/that-day-everyone-left/11.jpg"
   },
-  "src/assets/photos/that-day-everyone-left/4.jpg": {
-    "file": "assets/4.bac09810.jpg",
-    "src": "src/assets/photos/that-day-everyone-left/4.jpg"
-  },
   "src/assets/photos/that-day-everyone-left/15.jpg": {
     "file": "assets/15.04430df9.jpg",
     "src": "src/assets/photos/that-day-everyone-left/15.jpg"
-  },
-  "src/assets/photos/that-day-everyone-left/5.jpg": {
-    "file": "assets/5.73f5d09d.jpg",
-    "src": "src/assets/photos/that-day-everyone-left/5.jpg"
-  },
-  "src/assets/photos/that-day-everyone-left/7.jpg": {
-    "file": "assets/7.94c6091f.jpg",
-    "src": "src/assets/photos/that-day-everyone-left/7.jpg"
   },
   "src/assets/photos/that-day-everyone-left/12.jpg": {
     "file": "assets/12.f2b1aff8.jpg",
@@ -107,10 +107,6 @@
     "file": "assets/Inter-Medium.1b498b95.woff2",
     "src": "src/assets/fonts/Inter-Medium.woff2"
   },
-  "src/assets/fonts/Inter-SemiBold.woff2": {
-    "file": "assets/Inter-SemiBold.15226129.woff2",
-    "src": "src/assets/fonts/Inter-SemiBold.woff2"
-  },
   "src/assets/fonts/Inter-Bold.woff2": {
     "file": "assets/Inter-Bold.c63158ba.woff2",
     "src": "src/assets/fonts/Inter-Bold.woff2"
@@ -119,33 +115,37 @@
     "file": "assets/ITC-Charter-Regular.7b9c24b1.woff2",
     "src": "src/assets/fonts/ITC-Charter-Regular.woff2"
   },
+  "src/assets/fonts/Inter-SemiBold.woff2": {
+    "file": "assets/Inter-SemiBold.15226129.woff2",
+    "src": "src/assets/fonts/Inter-SemiBold.woff2"
+  },
   "src/assets/fonts/Inter-Regular.woff": {
     "file": "assets/Inter-Regular.ef1f23c0.woff",
     "src": "src/assets/fonts/Inter-Regular.woff"
-  },
-  "src/assets/fonts/Inter-Medium.woff": {
-    "file": "assets/Inter-Medium.53deda46.woff",
-    "src": "src/assets/fonts/Inter-Medium.woff"
-  },
-  "src/assets/fonts/Inter-SemiBold.woff": {
-    "file": "assets/Inter-SemiBold.653fed7a.woff",
-    "src": "src/assets/fonts/Inter-SemiBold.woff"
   },
   "src/assets/fonts/Inter-Bold.woff": {
     "file": "assets/Inter-Bold.3e242080.woff",
     "src": "src/assets/fonts/Inter-Bold.woff"
   },
+  "src/assets/fonts/Inter-Medium.woff": {
+    "file": "assets/Inter-Medium.53deda46.woff",
+    "src": "src/assets/fonts/Inter-Medium.woff"
+  },
   "src/assets/fonts/ITC-Charter-Regular.woff": {
     "file": "assets/ITC-Charter-Regular.ed920b1c.woff",
     "src": "src/assets/fonts/ITC-Charter-Regular.woff"
   },
-  "src/assets/videos/photographer.mp4": {
-    "file": "assets/photographer.aedf760e.mp4",
-    "src": "src/assets/videos/photographer.mp4"
+  "src/assets/fonts/Inter-SemiBold.woff": {
+    "file": "assets/Inter-SemiBold.653fed7a.woff",
+    "src": "src/assets/fonts/Inter-SemiBold.woff"
   },
   "src/assets/videos/musician.mp4": {
     "file": "assets/musician.cb6fedd0.mp4",
     "src": "src/assets/videos/musician.mp4"
+  },
+  "src/assets/videos/photographer.mp4": {
+    "file": "assets/photographer.aedf760e.mp4",
+    "src": "src/assets/videos/photographer.mp4"
   },
   "src/assets/videos/developer.mp4": {
     "file": "assets/developer.d89e292d.mp4",
@@ -475,29 +475,9 @@
     "file": "assets/developer.page.c8bb1dc8.css",
     "src": "src/pages/developer.page.css"
   },
-  "Iframe.css": {
-    "file": "assets/Iframe.4c98e8f9.css",
-    "src": "Iframe.css"
-  },
-  "src/pages/index.page.css": {
-    "file": "assets/index.page.154d2e68.css",
-    "src": "src/pages/index.page.css"
-  },
   "src/views/Grid.page.css": {
     "file": "assets/Grid.page.bc283ea9.css",
     "src": "src/views/Grid.page.css"
-  },
-  "src/renderer/_default.page.client.css": {
-    "file": "assets/_default.page.client.862186b6.css",
-    "src": "src/renderer/_default.page.client.css"
-  },
-  "Image.css": {
-    "file": "assets/Image.32a99c96.css",
-    "src": "Image.css"
-  },
-  "Text.css": {
-    "file": "assets/Text.24efd480.css",
-    "src": "Text.css"
   },
   "Paragraph.css": {
     "file": "assets/Paragraph.6efb6446.css",
@@ -506,5 +486,25 @@
   "Video.css": {
     "file": "assets/Video.f8b57660.css",
     "src": "Video.css"
+  },
+  "Text.css": {
+    "file": "assets/Text.24efd480.css",
+    "src": "Text.css"
+  },
+  "Iframe.css": {
+    "file": "assets/Iframe.4c98e8f9.css",
+    "src": "Iframe.css"
+  },
+  "src/pages/index.page.css": {
+    "file": "assets/index.page.154d2e68.css",
+    "src": "src/pages/index.page.css"
+  },
+  "Image.css": {
+    "file": "assets/Image.32a99c96.css",
+    "src": "Image.css"
+  },
+  "src/renderer/_default.page.client.css": {
+    "file": "assets/_default.page.client.862186b6.css",
+    "src": "src/renderer/_default.page.client.css"
   }
 }
