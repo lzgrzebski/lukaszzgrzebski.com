@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
-import { useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
+import { ErrorBoundary } from 'react-error-boundary';
+import { Text } from '../views/Text.view';
 
 /** Specialize MediaStreamTrack so that we can refer specifically to an audio track. */
 interface MediaStreamAudioTrack extends MediaStreamTrack {
@@ -189,6 +190,7 @@ const Pixlzr = () => {
                                             width,
                                             height
                                         );
+
                                     if (!imageData) {
                                         return;
                                     }
@@ -328,18 +330,6 @@ const Pixlzr = () => {
                                                     index(x + 1, y + 1) + 1
                                                 ] +
                                                 (errB * 1) / 16;
-
-                                            // const grayscale =
-                                            //     (imageData?.data[i] +
-                                            //         imageData?.data[i + 1] +
-                                            //         imageData?.data[i + 2]) /
-                                            //     3;
-
-                                            // imageData.data[i] = grayscale;
-
-                                            // imageData.data[i + 1] = grayscale;
-
-                                            // imageData.data[i + 2] = grayscale;
                                         }
                                     }
 
@@ -403,4 +393,23 @@ const Pixlzr = () => {
     );
 };
 
-export default { Page: Pixlzr };
+const PixlzrWithErrorBoundary = () => (
+    <ErrorBoundary
+        fallbackRender={(props) => (
+            <Text>
+                <p>
+                    Was a bit lazy to get it working without MediaTrackGenerator
+                    and OffscreenCanvas.
+                    <br />
+                    Best to check it in chrome before I make it backward
+                    compatible ;){' '}
+                </p>
+                <code>{props.error.toString()}</code>
+            </Text>
+        )}
+    >
+        <Pixlzr />
+    </ErrorBoundary>
+);
+
+export default { Page: PixlzrWithErrorBoundary };

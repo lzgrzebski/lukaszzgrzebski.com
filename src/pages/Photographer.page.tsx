@@ -8,9 +8,9 @@ import { Text } from '../views/Text.view';
 import { Layout } from '../views/Layout.view';
 import { Grid } from '../views/Grid.page';
 import { Paragraph } from '../views/Paragraph.view';
+import { Link } from '../views/Link.view';
 
 import splash from '../assets/videos/photographer.mp4';
-import { Link } from '../views/Link.view';
 
 const Photographer: React.FC = () => (
     <Layout>
@@ -26,8 +26,14 @@ const Photographer: React.FC = () => (
                 </Paragraph>
                 <Paragraph>
                     I am a graduate from AFA School of Photography and my latest
-                    exbition &quot;That day everyone left&quot; took place in
-                    Contemporary Museum in Wrocław.
+                    exbition{' '}
+                    <Link
+                        href="https://muzeumwspolczesne.pl/mww/wystawy/tamtego-dnia-wszyscy-wyjechali-lukasz-zgrzebski/?lang=en"
+                        target="_blank"
+                    >
+                        &quot;That day everyone left&quot;
+                    </Link>{' '}
+                    took place in Contemporary Museum in Wrocław.
                 </Paragraph>
                 <Paragraph>
                     <Link href="/river">By the river (2021-)</Link>
@@ -47,5 +53,3 @@ const Photographer: React.FC = () => (
 );
 
 export default { Page: Photographer };
-
-// https://muzeumwspolczesne.pl/mww/wystawy/tamtego-dnia-wszyscy-wyjechali-lukasz-zgrzebski/?lang=en
