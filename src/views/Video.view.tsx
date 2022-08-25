@@ -8,7 +8,7 @@ export const Video: React.FC<React.ComponentProps<'video'>> = ({
     className,
     loop = true,
     muted = true,
-    preload = 'auto',
+    preload = 'metadata',
     ...props
 }) => (
     <video
