@@ -1,7 +1,5 @@
 import React from 'react';
 
-import splash from '../assets/videos/developer.mp4';
-import styles from './developer.module.css';
 import { Menu } from '../views/Menu.view';
 import { Footer } from '../views/Footer.view';
 import { Jumbotron } from '../views/Jumbotron.view';
@@ -11,6 +9,9 @@ import { Layout } from '../views/Layout.view';
 import { Grid } from '../views/Grid.page';
 import { Paragraph } from '../views/Paragraph.view';
 import { Link } from '../views/Link.view';
+
+import splash from '../assets/videos/developer.mp4';
+import styles from './developer.module.css';
 
 const Developer: React.FC = () => (
     <Layout className={styles.developer}>
