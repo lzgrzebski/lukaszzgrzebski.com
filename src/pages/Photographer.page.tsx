@@ -10,6 +10,7 @@ import { Grid } from '../views/Grid.page';
 import { Paragraph } from '../views/Paragraph.view';
 
 import splash from '../assets/videos/photographer.mp4';
+import { Link } from '../views/Link.view';
 
 const Photographer: React.FC = () => (
     <Layout>
@@ -29,15 +30,15 @@ const Photographer: React.FC = () => (
                     Contemporary Museum in Wrocław.
                 </Paragraph>
                 <Paragraph>
-                    <a href="/river">By the river (2021-)</a>
+                    <Link href="/river">By the river (2021-)</Link>
                 </Paragraph>
                 <Paragraph>
-                    <a href="/stay-at-home">Stay at home zine (2020)</a>
+                    <Link href="/stay-at-home">Stay at home zine (2020)</Link>
                 </Paragraph>
                 <Paragraph>
-                    <a href="/that-day-everyone-left">
+                    <Link href="/that-day-everyone-left">
                         That day everyone left (2019)
-                    </a>
+                    </Link>
                 </Paragraph>
             </Text>
         </Grid>

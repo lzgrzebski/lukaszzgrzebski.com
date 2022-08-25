@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Text } from '../views/Text.view';
+import { Link } from '../views/Link.view';
 
 import styles from './index.module.css';
 
@@ -9,19 +10,19 @@ const Hello: React.FC = () => (
         <Text className={styles.wrapper}>
             Hello, <br />
             my name is Łukasz, I am a<br />
-            <a className={styles.link} href="/developer">
+            <Link className={styles.link} href="/developer">
                 developer
-            </a>{' '}
+            </Link>{' '}
             and{' '}
-            <a className={styles.link} href="/photographer">
+            <Link className={styles.link} href="/photographer">
                 photographer
-            </a>
+            </Link>
             . <br />
             <br />
             And in my free time aspiring{' '}
-            <a className={styles.link} href="/musician">
+            <Link className={styles.link} href="/musician">
                 musician
-            </a>{' '}
+            </Link>{' '}
             too :).
         </Text>
     </div>

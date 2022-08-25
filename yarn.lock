@@ -275,6 +275,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.6.2":
+  version: 7.18.9
+  resolution: "@babel/runtime@npm:7.18.9"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: 36dd736baba7164e82b3cc9d43e081f0cb2d05ff867ad39cac515d99546cee75b7f782018b02a3dcf5f2ef3d27f319faa68965fdfec49d4912c60c6002353a2e
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.18.10, @babel/template@npm:^7.18.6":
   version: 7.18.10
   resolution: "@babel/template@npm:7.18.10"
@@ -488,6 +497,108 @@ __metadata:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
   checksum: 52dc02259d98da517fae4cb3a0a3850227bdae4939dda1980b788a7670636ca2b4a01b58df03dd5f65c1e3cb70c50fa8ce5762b582b3f499ec30ee5ce1fd9380
+  languageName: node
+  linkType: hard
+
+"@react-aria/focus@npm:^3.7.0":
+  version: 3.7.0
+  resolution: "@react-aria/focus@npm:3.7.0"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-aria/interactions": ^3.10.0
+    "@react-aria/utils": ^3.13.2
+    "@react-types/shared": ^3.14.0
+    clsx: ^1.1.1
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: 1c79425cb98923c2e0763e06c21d61ce207f5560cdbb82c9240c6848f50e2a95b93cf70b4c4ad57c825f85511c68e89874c5b5dc863824e8e94a4ddc5bf6f7a1
+  languageName: node
+  linkType: hard
+
+"@react-aria/interactions@npm:^3.10.0":
+  version: 3.10.0
+  resolution: "@react-aria/interactions@npm:3.10.0"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-aria/utils": ^3.13.2
+    "@react-types/shared": ^3.14.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: fad16ba07d628bab9b3d10352d58e37ca02d4cccafed5f6025b000d64dcaceac787fac710963ec3f0035da47e96d94fecf46184e650fcb5a58cbe5f2d4e48efa
+  languageName: node
+  linkType: hard
+
+"@react-aria/link@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "@react-aria/link@npm:3.3.2"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-aria/focus": ^3.7.0
+    "@react-aria/interactions": ^3.10.0
+    "@react-aria/utils": ^3.13.2
+    "@react-types/link": ^3.3.2
+    "@react-types/shared": ^3.14.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: e851d7cce222ec9bbd16bbd44bc55d4a2f4e139ad28f7b1de9d4f4b36442af87ffe7b1bcbda3f73e969319a0c3a81732fff0044a372448657b3ddcb401170234
+  languageName: node
+  linkType: hard
+
+"@react-aria/ssr@npm:^3.3.0":
+  version: 3.3.0
+  resolution: "@react-aria/ssr@npm:3.3.0"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: 0b7677ef521c65452460601dce3c264b67baa75ef7c99e9755ea55913765054156b6157c9c42e3d56aba86d1704b8b2aeb7672e4084f2f375fe1ec481e33c8c6
+  languageName: node
+  linkType: hard
+
+"@react-aria/utils@npm:^3.13.2":
+  version: 3.13.2
+  resolution: "@react-aria/utils@npm:3.13.2"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-aria/ssr": ^3.3.0
+    "@react-stately/utils": ^3.5.1
+    "@react-types/shared": ^3.14.0
+    clsx: ^1.1.1
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: 1978dbd54fecbef8db52693b92d9b3071a856ba4e7a4382747f0b1772042d5d2708afed008707d56fc24c47e989051927bb1a5c61b0335cd6be8bd2fef660eb8
+  languageName: node
+  linkType: hard
+
+"@react-stately/utils@npm:^3.5.1":
+  version: 3.5.1
+  resolution: "@react-stately/utils@npm:3.5.1"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: f748331ae393f97b3e6fcccd37b767358f49229520b9500f82ed4c620bff36ef3c01d4ba9679ac7b9d6d78c5f6e711186c98bd0e6482ec27a6fbf26c5d0aa3cc
+  languageName: node
+  linkType: hard
+
+"@react-types/link@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "@react-types/link@npm:3.3.2"
+  dependencies:
+    "@react-aria/interactions": ^3.10.0
+    "@react-types/shared": ^3.14.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: 098a9ec2428a2782c6f62083e3034515eb26d23ad02d60e902c48d459e5914fd72a8d4b9c171536120b95b42c1a4423525acd6d4f2ac12fbd1e4670ab549e1a8
+  languageName: node
+  linkType: hard
+
+"@react-types/shared@npm:^3.14.0":
+  version: 3.14.0
+  resolution: "@react-types/shared@npm:3.14.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: e5aa5c52ce112dd74ff2c4cb9311aaa65a404d6bd94df6293f8ffc38c58626ae2186094a1d96c09e846ff0be004c09fc24f0be26f6ccf5263ae711f44723c7bb
   languageName: node
   linkType: hard
 
@@ -1032,6 +1143,13 @@ __metadata:
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
   checksum: 2ac8cd2b2f5ec986a3c743935ec85b07bc174d5421a5efc8017e1f146a1cf5f781ae962618f416352103b32c9cd7e203276e8c28241bbe946160cab16149fb68
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^1.1.1":
+  version: 1.2.1
+  resolution: "clsx@npm:1.2.1"
+  checksum: 30befca8019b2eb7dbad38cff6266cf543091dae2825c856a62a8ccf2c3ab9c2907c4d12b288b73101196767f66812365400a227581484a05f968b0307cfaf12
   languageName: node
   linkType: hard
 
@@ -2443,6 +2561,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "lukaszzgrzebski.com@workspace:."
   dependencies:
+    "@react-aria/focus": ^3.7.0
+    "@react-aria/link": ^3.3.2
+    "@react-aria/utils": ^3.13.2
+    "@react-types/link": ^3.3.2
     "@types/classnames": ^2.3.1
     "@types/dom-webcodecs": ^0.1.4
     "@types/offscreencanvas": ^2019.7.0
@@ -3017,6 +3139,13 @@ __metadata:
     string_decoder: ^1.1.1
     util-deprecate: ^1.0.1
   checksum: d4ea81502d3799439bb955a3a5d1d808592cf3133350ed352aeaa499647858b27b1c4013984900238b0873ec8d0d8defce72469fb7a83e61d53f5ad61cb80dc8
+  languageName: node
+  linkType: hard
+
+"regenerator-runtime@npm:^0.13.4":
+  version: 0.13.9
+  resolution: "regenerator-runtime@npm:0.13.9"
+  checksum: 65ed455fe5afd799e2897baf691ca21c2772e1a969d19bb0c4695757c2d96249eb74ee3553ea34a91062b2a676beedf630b4c1551cc6299afb937be1426ec55e
   languageName: node
   linkType: hard
 

@@ -4,8 +4,11 @@
 
     padding: 20px 10px;
     font-weight: 500;
-    color: rgb(68 74 87);
     font-size: 0.8rem;
+}
+
+.footer a {
+    color: rgb(68 74 87);
 }
 
 @media (min-width: 1024px) {

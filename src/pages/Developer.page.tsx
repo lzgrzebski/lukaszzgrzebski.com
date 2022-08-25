@@ -10,6 +10,7 @@ import { Text } from '../views/Text.view';
 import { Layout } from '../views/Layout.view';
 import { Grid } from '../views/Grid.page';
 import { Paragraph } from '../views/Paragraph.view';
+import { Link } from '../views/Link.view';
 
 const Developer: React.FC = () => (
     <Layout className={styles.developer}>
@@ -32,7 +33,9 @@ const Developer: React.FC = () => (
                     collaboration tools.
                 </Paragraph>
                 <Paragraph>
-                    <a href="/pixlzr">Pixlzr</a>
+                    <Link href="/pixlzr" target="_blank">
+                        Pixlzr
+                    </Link>
                 </Paragraph>
             </Text>
         </Grid>

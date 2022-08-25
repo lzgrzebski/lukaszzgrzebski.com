@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { PageContext } from './types';
+import { PageShell } from './PageShell';
 
 import 'normalize.css';
 import '../index.css';
@@ -11,9 +12,9 @@ export const render = async (pageContext: PageContext) => {
     const { Page, pageProps } = pageContext;
 
     const page = (
-        <React.StrictMode>
+        <PageShell pageContext={pageContext}>
             <Page {...pageProps} />
-        </React.StrictMode>
+        </PageShell>
     );
 
     const container = document.getElementById('root') as HTMLElement;
