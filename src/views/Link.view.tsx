@@ -1,9 +1,7 @@
 import React, { useRef } from 'react';
 import cx from 'classnames';
 import { LinkProps } from '@react-types/link';
-import { useLink } from '@react-aria/link';
-import { useFocusRing } from '@react-aria/focus';
-import { mergeProps } from '@react-aria/utils';
+import { mergeProps, useLink, useFocusRing } from 'react-aria';
 
 import { usePageContext } from '../renderer/page.context';
 
