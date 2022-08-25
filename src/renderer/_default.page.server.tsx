@@ -24,8 +24,13 @@ export const render = (pageContext: PageContext) => {
     }
 
     return escapeInject`<!DOCTYPE html>
-    <html>
-    <head> <meta charset="UTF-8" /></head> 
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hello, I'm Łukasz. Software developer, photographer and musician from Poland :)</title>
+    </head> 
       <body>
         <div id="root">${dangerouslySkipEscape(pageHtml)}</div>
       </body>
