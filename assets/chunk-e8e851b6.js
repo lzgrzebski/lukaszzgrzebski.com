@@ -1,1 +1,0 @@
-import{r as t,a as s}from"./chunk-e01411ca.js";const o=t.exports.createContext(void 0),a=({pageContext:e,children:r})=>s(o.Provider,{value:e,children:r}),x=()=>{const e=t.exports.useContext(o);if(e===void 0)throw new Error("usePageContext must be used within a PageContextProvider");return e};export{a as P,x as u};

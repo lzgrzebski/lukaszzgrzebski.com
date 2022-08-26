@@ -1,0 +1,1 @@
+import{P as o}from"./chunk-4ee6ef42.js";import{I as s}from"./chunk-182d099b.js";import{a,F as t}from"./chunk-bd9e3544.js";const g=({images:m})=>a(t,{children:m.map(r=>a(o,{children:a(s,{src:r})},r))});export{g as I};
