@@ -136,15 +136,11 @@ const FloydSteinbergDithering = (
             const factor = 1;
 
             const newR = Math.round((factor * r) / 255) * (255 / factor);
-
             const newG = Math.round((factor * g) / 255) * (255 / factor);
-
             const newB = Math.round((factor * b) / 255) * (255 / factor);
 
             imageData.data[i] = newR;
-
             imageData.data[i + 1] = newG;
-
             imageData.data[i + 2] = newB;
 
             const errR = r - newR;

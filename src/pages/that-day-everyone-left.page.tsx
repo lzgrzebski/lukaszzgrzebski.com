@@ -8,6 +8,7 @@ import { Menu } from '../views/Menu.view';
 import { Paragraph } from '../views/Paragraph.view';
 import { Image } from '../views/Image.view';
 import { Text } from '../views/Text.view';
+import { ImageList } from '../views/ImageList.view';
 
 import img1 from '../assets/photos/that-day-everyone-left/1.jpg';
 import img2 from '../assets/photos/that-day-everyone-left/2.jpg';
@@ -25,6 +26,24 @@ import img14 from '../assets/photos/that-day-everyone-left/14.jpg';
 import img15 from '../assets/photos/that-day-everyone-left/15.jpg';
 import img16 from '../assets/photos/that-day-everyone-left/16.jpg';
 import img17 from '../assets/photos/that-day-everyone-left/17.jpg';
+
+const images = [
+    img3,
+    img1,
+    img2,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img14,
+    img15,
+    img16,
+    img17,
+];
 
 const ThatDayEveryoneLeft: React.FC = () => (
     <Layout>
@@ -85,55 +104,7 @@ const ThatDayEveryoneLeft: React.FC = () => (
                     </Paragraph>
                 </Text>
             }
-            row2={
-                <>
-                    <Paragraph>
-                        <Image src={img3} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img1} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img2} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img5} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img6} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img7} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img8} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img9} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img10} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img11} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img12} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img14} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img15} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img16} />
-                    </Paragraph>
-                    <Paragraph>
-                        <Image src={img17} />
-                    </Paragraph>
-                </>
-            }
+            row2={<ImageList images={images} />}
         />
         <Footer />
     </Layout>
