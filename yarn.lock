@@ -275,7 +275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.6.2":
+"@babel/runtime@npm:^7.6.2":
   version: 7.18.9
   resolution: "@babel/runtime@npm:7.18.9"
   dependencies:
@@ -1885,24 +1885,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/dom-webcodecs@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@types/dom-webcodecs@npm:0.1.4"
-  checksum: 150813bbee4315620282ef849d0e61c7a5e6ba7d9475307d06effaa900baa124cd6d922e5de498f80f31beb5dc23daa1750f71babcf5cf1159df05ee0d224751
-  languageName: node
-  linkType: hard
-
 "@types/json-schema@npm:^7.0.9":
   version: 7.0.11
   resolution: "@types/json-schema@npm:7.0.11"
   checksum: 527bddfe62db9012fccd7627794bd4c71beb77601861055d87e3ee464f2217c85fca7a4b56ae677478367bbd248dbde13553312b7d4dbc702a2f2bbf60c4018d
-  languageName: node
-  linkType: hard
-
-"@types/offscreencanvas@npm:^2019.7.0":
-  version: 2019.7.0
-  resolution: "@types/offscreencanvas@npm:2019.7.0"
-  checksum: 018cfcd19e0c59c44d14ba61caaca7246f77fbb512839c7881654b7f2b6591dbdd5857362eccbf49f29cdc93724e71a4b37c8b6cf203388f9c04e913a53ea390
   languageName: node
   linkType: hard
 
@@ -3842,8 +3828,6 @@ __metadata:
   dependencies:
     "@react-types/link": ^3.3.2
     "@types/classnames": ^2.3.1
-    "@types/dom-webcodecs": ^0.1.4
-    "@types/offscreencanvas": ^2019.7.0
     "@types/react": ^18.0.17
     "@types/react-dom": ^18.0.6
     "@typescript-eslint/eslint-plugin": latest
@@ -3859,7 +3843,6 @@ __metadata:
     react: ^18.2.0
     react-aria: ^3.18.0
     react-dom: ^18.2.0
-    react-error-boundary: ^3.1.4
     typescript: ^4.8.2
     vite: ^3.0.7
     vite-plugin-ssr: ^0.4.26
@@ -4425,17 +4408,6 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
   checksum: 7d323310bea3a91be2965f9468d552f201b1c27891e45ddc2d6b8f717680c95a75ae0bc1e3f5cf41472446a2589a75aed4483aee8169287909fcd59ad149e8cc
-  languageName: node
-  linkType: hard
-
-"react-error-boundary@npm:^3.1.4":
-  version: 3.1.4
-  resolution: "react-error-boundary@npm:3.1.4"
-  dependencies:
-    "@babel/runtime": ^7.12.5
-  peerDependencies:
-    react: ">=16.13.1"
-  checksum: f36270a5d775a25c8920f854c0d91649ceea417b15b5bc51e270a959b0476647bb79abb4da3be7dd9a4597b029214e8fe43ea914a7f16fa7543c91f784977f1b
   languageName: node
   linkType: hard
 

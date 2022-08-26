@@ -34,7 +34,10 @@ const Developer: React.FC = () => (
                     collaboration tools.
                 </Paragraph>
                 <Paragraph>
-                    <Link href="/pixlzr" target="_blank">
+                    <Link
+                        href="https://lzgrzebski.github.io/pixlzr/"
+                        target="_blank"
+                    >
                         Pixlzr
                     </Link>
                 </Paragraph>
