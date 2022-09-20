@@ -16,7 +16,7 @@ const Musician: React.FC = () => (
     <Layout>
         <Menu />
         <Jumbotron>
-            <Video src={splash} />
+            <Video poster="/musician.jpg" src={splash} />
         </Jumbotron>
         <Grid
             row1={

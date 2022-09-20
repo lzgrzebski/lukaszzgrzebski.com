@@ -9,6 +9,7 @@ export const Video: React.FC<React.ComponentProps<'video'>> = ({
     loop = true,
     muted = true,
     preload = 'metadata',
+    src,
     ...props
 }) => (
     <video
@@ -17,6 +18,7 @@ export const Video: React.FC<React.ComponentProps<'video'>> = ({
         loop={loop}
         muted={muted}
         preload={preload}
+        src={preload === 'metadata' ? `${src}#t=0.1` : src}
         {...props}
     />
 );

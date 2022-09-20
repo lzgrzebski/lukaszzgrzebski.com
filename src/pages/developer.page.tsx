@@ -17,7 +17,7 @@ const Developer: React.FC = () => (
     <Layout className={styles.developer}>
         <Menu />
         <Jumbotron>
-            <Video src={splash} />
+            <Video poster="/developer.jpg" src={splash} />
         </Jumbotron>
         <Grid>
             <Text>
