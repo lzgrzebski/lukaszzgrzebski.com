@@ -1,0 +1,1 @@
+import{c as m}from"./chunk-22372364.js";import{a as r}from"./chunk-bd9e3544.js";const c="_video_1na9q_1",v={video:c},x=({autoPlay:o=!0,className:a,loop:s=!0,muted:i=!0,preload:t="metadata",src:e,...d})=>r("video",{autoPlay:o,className:m(v.video,a),loop:s,muted:i,preload:t,src:t==="metadata"?`${e}#t=0.1`:e,...d});export{x as V};
